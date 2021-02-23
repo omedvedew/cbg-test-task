@@ -1,0 +1,234 @@
+@import "./mixins.scss";
+@font-face {
+    font-family: "GilroyRegular";
+    src: url(fonts/GilroyRegular.woff) format("woff");
+}
+@font-face {
+    font-family: "GilroyBlack";
+    src: url(fonts/GilroyBlack.woff) format("woff");
+}
+@font-face {
+    font-family: "GilroyBold";
+    src: url(fonts/GilroyBold.woff) format("woff");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-contacts {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.31);
+    font-family: "GilroyRegular";
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .header-contacts__contacts {
+        display: flex;
+        width: 30%;
+        justify-content: space-evenly;
+
+        .header-contacts__contacts_item {
+            display: flex;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s;
+        }
+        .header-contacts__contacts_item:hover {
+            color: #ff9900;
+            transition: all 0.3s;
+        }
+    }
+
+    .header-contacts__social {
+        display: flex;
+        width: 20%;
+        justify-content: center;
+
+        .header-contacts__social_btn {
+            display: flex;
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .hsb-linkedIn {
+            background-image: url(images/linkedin-1.png);
+        }
+        .hsb-facebook {
+            background-image: url(images/facebook-1.png);
+        }
+        .hsb-instagram {
+            background-image: url(images/instagram-1.png);
+        } 
+
+        .header-contacts__social_btn:hover {
+            transition: all 0.3s;
+            background-color: #ff9900;
+            box-shadow: 0px 0px 10px 5px #ff9900;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-family: "GilroyRegular";
+
+    .header__logo {
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        
+        .header__logo_item {
+            font-family: "GilroyBlack";
+            font-size: 24px;
+            color: #ff9900;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .header__logo_item:hover {
+            color: #ffffff;
+            transition: all 0.3s;
+            transform: scale(1.2);
+        }
+    }
+
+    .header__nav {
+        display: flex;
+        width: 55%;
+        justify-content: space-evenly;
+
+        .header__nav_item {
+            display: flex;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            border-bottom: 2px solid transparent;
+            padding-top: 4px;
+            padding-bottom: 2px;
+            transition: all 0.3s;
+        }
+        .header__nav_item:hover {
+            color: #ff9900;
+            border-bottom: 2px solid #ff9900;
+            transition: all 0.3s;
+        }
+    }
+
+    .header__callback {
+        display: flex;
+        width: 25%;
+        justify-content: center;
+
+        .header__callback_btn {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            background: transparent;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .header__callback_btn:focus {
+            outline: none;
+        }
+
+        .header__callback_btn:hover {
+            transition: all 0.3s;
+            color: #ff9900;
+            border: 2px solid #ff9900;
+            cursor: pointer;
+        }
+    }
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 1014px;
+    background-image: url(images/electrician-installer-with-tool-his-hands-working-with-cable-construction-site-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+    margin-top: -152px;
+
+    .cover__description {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: calc(100% - 169px);
+        justify-content: center;
+        align-items: flex-start;
+
+        .cover__description_title {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .cover__description_text {
+            font-family: "GilroyRegular";
+            font-size: 18xp;
+            color: #ffffff;
+            margin-top: 29px;
+            line-height: 25px;
+        }
+
+        .cover__description_btn {
+            display: flex;
+            background: transparent;
+            padding: 10px 20px;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            font-family: "GilroyBold";
+            font-size: 16px;
+            margin-top: 60px;
+            transition: all 0.3s;
+        }
+
+        .cover__description_btn:focus {
+            outline: none;
+        }
+
+        .cover__description_btn:hover {
+            background-color: #ff9900;
+            border: 2px solid #ff9900;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+    }
+
+    .cover__features {
+        display: flex;
+        width: 100%;
+        height: 169px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+
