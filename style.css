@@ -299,12 +299,14 @@
   font-size: 18px;
   color: #ff9900;
   margin-bottom: 10px;
+  letter-spacing: 9.7px;
 }
 .about-us .about-us__description .container_second-title {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   color: #000000;
   margin-bottom: 30px;
+  font-weight: normal;
 }
 .about-us .about-us__description .about-us__description_text {
   font-family: "GilroyRegular";
@@ -327,12 +329,14 @@
   font-size: 18px;
   color: #ff9900;
   margin-bottom: 10px;
+  letter-spacing: 9.7px;
 }
 .work-stages .container_second-title {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   color: #000000;
   margin-bottom: 30px;
+  font-weight: normal;
 }
 .work-stages .work-stages__second-title {
   color: #ffffff;
@@ -426,12 +430,14 @@
   font-size: 18px;
   color: #ff9900;
   margin-bottom: 10px;
+  letter-spacing: 9.7px;
 }
 .portfolio .portfolio__titles .container_second-title {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   color: #000000;
   margin-bottom: 30px;
+  font-weight: normal;
 }
 .portfolio .portfolio__works {
   display: flex;
@@ -466,6 +472,67 @@
 .portfolio .portfolio__works .portfolio__works__slider {
   display: flex;
   width: 50%;
+}
+
+.testimonials {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image: url(images/handyman-uses-jackhammer-for-installation-professional-worker-on-the-construction-site-the-concept-of-electrician-and-handyman1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.testimonials .testimonials__slider {
+  display: flex;
+  width: 766px;
+  height: 671px;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px;
+  background-image: url(images/ddd.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: 90%;
+  background-position-y: 50%;
+}
+.testimonials .testimonials__slider .container_first-title {
+  font-family: "GilroyRegular";
+  font-size: 18px;
+  color: #ff9900;
+  margin-bottom: 10px;
+  letter-spacing: 9.7px;
+}
+.testimonials .testimonials__slider .container_second-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+.testimonials .testimonials__slider .testimonials__slider_first-title {
+  margin-top: 75px;
+}
+.testimonials .testimonials__slider .testimonials__slider_second-title {
+  line-height: 55px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 50px;
+}
+.testimonials .testimonials__slider .splide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.testimonials .testimonials__slider .splide .splide__list {
+  height: 100%;
+}
+.testimonials .testimonials__slider .splide .splide__list .splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
