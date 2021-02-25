@@ -1,0 +1,17 @@
+@mixin containerFirstTitle {
+    .container_first-title {
+        font-family: "GilroyRegular";
+        font-size: 18px;
+        color: #ff9900;
+        margin-bottom: 10px;
+    }
+}
+
+@mixin containerSecondTitle {
+    .container_second-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+}

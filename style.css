@@ -294,13 +294,13 @@
   background-position-x: 100%;
   background-position-y: 200%;
 }
-.about-us .about-us__description .about-us__description_first-title {
+.about-us .about-us__description .container_first-title {
   font-family: "GilroyRegular";
   font-size: 18px;
   color: #ff9900;
   margin-bottom: 10px;
 }
-.about-us .about-us__description .about-us__description_second-title {
+.about-us .about-us__description .container_second-title {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   color: #000000;
@@ -312,6 +312,30 @@
   color: #7c7c7c;
   line-height: 25px;
   margin-bottom: 25px;
+}
+
+.work-stages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #000000;
+  padding: 65px 169px;
+}
+.work-stages .container_first-title {
+  font-family: "GilroyRegular";
+  font-size: 18px;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+.work-stages .container_second-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.work-stages .work-stages__second-title {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
