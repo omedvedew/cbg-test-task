@@ -81,9 +81,6 @@
   width: 100%;
   height: 80px;
   align-items: center;
-  position: sticky;
-  top: 0;
-  left: 0;
   z-index: 10;
   font-family: "GilroyRegular";
 }
@@ -208,6 +205,113 @@
   height: 169px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+}
+.cover .cover__features .cover__features_item {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cover .cover__features .cover__features_item .cfi_text {
+  font-size: 20px;
+  font-family: "GilroyRegular";
+  color: #ffffff;
+  max-width: 50%;
+}
+.cover .cover__features .cover__features_item .cfi_img {
+  display: flex;
+  height: 92px;
+  width: 92px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.cover .cover__features .cover__features_item .cfi-business {
+  background-image: url(images/business-1.png);
+}
+.cover .cover__features .cover__features_item .cfi-money-bag {
+  background-image: url(images/money-bag-1.png);
+}
+.cover .cover__features .cover__features_item .cfi-business-report {
+  background-image: url(images/business-report-1.png);
+}
+.cover .cover__features .cover__features_item .cfi-fast {
+  background-image: url(images/fast-2.png);
+}
+.cover .cover__features .cover__features_item .cfi-guarantee {
+  background-image: url(images/guarantee-1.png);
+}
+
+.about-us {
+  display: flex;
+  width: 100%;
+}
+.about-us .about-us__img {
+  display: flex;
+  width: 38%;
+  background-image: url(images/charles-deluvio-c2thq3SXJiA-unsplash1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.about-us .about-us__img .about-us__img_experience {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: fit-content;
+  background-color: #ffb800;
+  padding: 34px;
+}
+.about-us .about-us__img .about-us__img_experience .aie-digit {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  color: #ffffff;
+}
+.about-us .about-us__img .about-us__img_experience .aie-text {
+  font-family: "GilroyRegular";
+  font-size: 30px;
+  color: #ffffff;
+}
+.about-us .about-us__description {
+  display: flex;
+  flex-direction: column;
+  width: 62%;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 148px 187px;
+  background-image: url(images/two-bedroom-x2--plan2.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-x: 100%;
+  background-position-y: 200%;
+}
+.about-us .about-us__description .about-us__description_first-title {
+  font-family: "GilroyRegular";
+  font-size: 18px;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+.about-us .about-us__description .about-us__description_second-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.about-us .about-us__description .about-us__description_text {
+  font-family: "GilroyRegular";
+  font-size: 18px;
+  color: #7c7c7c;
+  line-height: 25px;
+  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
