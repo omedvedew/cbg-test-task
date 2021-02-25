@@ -337,5 +337,71 @@
 .work-stages .work-stages__second-title {
   color: #ffffff;
 }
+.work-stages .work-stages__progressbar-container {
+  display: flex;
+  width: 100%;
+  margin: 70px auto;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar {
+  display: flex;
+  counter-reset: step;
+  justify-content: space-evenly;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+  color: #ffffff;
+  width: 16%;
+  font-family: "GilroyRegular";
+  font-size: 14px;
+  line-height: 19px;
+  position: relative;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item .progress-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 7px;
+  left: -3px;
+  z-index: 2;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item .progress-ring .progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item:before {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 55px;
+  width: 66px;
+  height: 66px;
+  content: counter(step);
+  counter-increment: step;
+  border: 1px solid #ffffff;
+  margin: 10px auto 10px 0;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 1;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item:after {
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  top: 33px;
+  left: -80%;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item:first-child:after {
+  content: none;
+}
+.work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item:after {
+  background-color: #ffffff;
+}
 
 /*# sourceMappingURL=style.css.map */

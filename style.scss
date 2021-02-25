@@ -352,5 +352,77 @@
     .work-stages__second-title {
         color: #ffffff;
     }
+
+    .work-stages__progressbar-container {
+        display: flex;
+        width: 100%;
+        margin: 70px auto;
+
+        .work-stages__progressbar-container_progressbar {
+            display: flex;
+            counter-reset: step;
+            justify-content: space-evenly;
+
+            .wsp-item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                list-style-type: none;
+                color: #ffffff;
+                width: 16%;
+                font-family: "GilroyRegular";
+                font-size: 14px;
+                line-height: 19px;
+                position: relative;
+
+                .progress-ring {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 7px;
+                    left: -3px;
+                    z-index: 2;
+
+                    .progress-ring__circle {
+                        transition: 0.35s stroke-dashoffset;
+                        // axis compensation
+                        transform: rotate(-90deg);
+                        transform-origin: 50% 50%;
+                    }
+                }
+            }
+            .wsp-item:before {
+                font-family: 'Playfair Display', serif;
+                font-size: 40px;
+                text-align: center;
+                line-height: 55px;
+                width: 66px;
+                height: 66px;
+                content: counter(step);
+                counter-increment: step;
+                border: 1px solid #ffffff;
+                margin: 10px auto 10px 0;
+                border-radius: 50%;
+                background-color: black;
+                z-index: 1;
+            }
+            .wsp-item:after {
+                width: 100%;
+                height: 1px;
+                content: '';
+                background-color: #ffffff;
+                position: absolute;
+                top: 33px;
+                left: -80%;
+            }
+            .wsp-item:first-child:after {
+                content: none;
+            }
+            .wsp-item:after {
+                background-color: #ffffff;
+            }
+        }
+    }
 }
 
