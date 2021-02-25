@@ -394,7 +394,7 @@
   content: "";
   background-color: #ffffff;
   position: absolute;
-  top: 33px;
+  top: 44px;
   left: -80%;
 }
 .work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item:first-child:after {
@@ -402,6 +402,70 @@
 }
 .work-stages .work-stages__progressbar-container .work-stages__progressbar-container_progressbar .wsp-item:after {
   background-color: #ffffff;
+}
+
+.portfolio {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 168px;
+  background-image: url(images/two-bedroom-x2--plan-1.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: 35%;
+  background-position-y: 180%;
+}
+.portfolio .portfolio__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .portfolio__titles .container_first-title {
+  font-family: "GilroyRegular";
+  font-size: 18px;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+.portfolio .portfolio__titles .container_second-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.portfolio .portfolio__works {
+  display: flex;
+  width: 100%;
+}
+.portfolio .portfolio__works .portfolio__works__description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-family: "GilroyRegular";
+  padding-right: 20px;
+}
+.portfolio .portfolio__works .portfolio__works__description .pwd-title {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 24px;
+}
+.portfolio .portfolio__works .portfolio__works__description .pwd-text {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.portfolio .portfolio__works .portfolio__works__description .pwd-text b {
+  font-size: 18px;
+}
+.portfolio .portfolio__works .portfolio__works__description .pwd-text sup {
+  font-size: 12px;
+}
+.portfolio .portfolio__works .portfolio__works__description .pwd-text:nth-child(3) {
+  margin-bottom: 12px;
+}
+.portfolio .portfolio__works .portfolio__works__slider {
+  display: flex;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

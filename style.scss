@@ -413,7 +413,7 @@
                 content: '';
                 background-color: #ffffff;
                 position: absolute;
-                top: 33px;
+                top: 44px;
                 left: -80%;
             }
             .wsp-item:first-child:after {
@@ -422,6 +422,68 @@
             .wsp-item:after {
                 background-color: #ffffff;
             }
+        }
+    }
+}
+
+.portfolio {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 168px;
+    background-image: url(images/two-bedroom-x2--plan-1.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 35%;
+    background-position-y: 180%;
+
+    .portfolio__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include containerFirstTitle;
+        @include containerSecondTitle;
+    }
+
+    .portfolio__works {
+        display: flex;
+        width: 100%;
+
+        .portfolio__works__description {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            font-family: "GilroyRegular";
+            padding-right: 20px;
+
+            .pwd-title {
+                font-size: 24px;
+                line-height: 33px;
+                margin-bottom: 24px;
+            }
+
+            .pwd-text {
+                font-size: 20px;
+                line-height: 25px;
+                margin-bottom: 30px;
+
+                b {
+                    font-size: 18px;
+                }
+
+                sup {
+                    font-size: 12px;
+                }
+            }
+            .pwd-text:nth-child(3) {
+                margin-bottom: 12px;
+            }
+        }
+
+        .portfolio__works__slider {
+            display: flex;
+            width: 50%;
         }
     }
 }
