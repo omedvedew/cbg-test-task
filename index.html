@@ -206,10 +206,22 @@
                 <div class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide">Slide 01</li>
-                            <li class="splide__slide">Slide 02</li>
-                            <li class="splide__slide">Slide 03</li>
-                            <li class="splide__slide">Slide 04</li>
+                            <li class="splide__slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu.</p>
+                                <h3>Олена Філонова, Львів</h3>
+                            </li>
+                            <li class="splide__slide">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et consequuntur ea laboriosam eius distinctio, illum quae, officia incidunt expedita nobis dolorem maxime, perferendis placeat enim minus minima id quod?</p>
+                                <h3>Філона Оленова, Львів</h3>
+                            </li>
+                            <li class="splide__slide">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, voluptatem aliquid magni nobis deleniti eveniet sunt a nostrum quasi, itaque, facere ratione voluptas beatae ipsam optio illum minima perferendis repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui illum modi incidunt quia soluta iste dolorum fuga, asperiores minus fugiat at magnam. Voluptatem, laboriosam aspernatur provident quasi repudiandae totam.</p>
+                                <h3>Олена Філонова, Львів</h3>
+                            </li>
+                            <li class="splide__slide">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit porro temporibus quas provident, rem quaerat dolores sit a quasi ab sapiente rerum enim voluptatem pariatur ipsam accusamus aliquid alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odit, expedita molestias commodi quaerat repellendus explicabo aut? Rerum ipsa iste quis necessitatibus. Ad provident consequuntur molestias, neque hic facilis deleniti!</p>
+                                <h3>Філона Оленова, Львів</h3>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -221,7 +233,9 @@
     <footer class="footer">Footer</footer>
     <script>
         document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '.splide' ).mount();
+            new Splide( '.splide' , {
+                type: 'loop',
+            }).mount();
         } );
     </script>
     <script src="app.js"></script>
