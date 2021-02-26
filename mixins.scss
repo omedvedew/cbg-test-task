@@ -17,3 +17,14 @@
         font-weight: normal;
     }
 }
+
+@mixin inputFormatting {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 3px;
+    color: #ffffff;
+    font-family: "GilroyRegular";
+    font-weight: normal;
+    font-size: 16px;
+}

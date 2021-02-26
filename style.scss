@@ -542,6 +542,7 @@
                     font-family: "GilroyRegular";
                     color: #ffffff;
                     text-align: center;
+                    padding-bottom: 40px;
 
                     p {
                         font-weight: normal;
@@ -563,15 +564,16 @@
                 left: 50%;
 
                 .splide__arrow--next {
-                    right: -70px;
+                    right: -100px;
                 }
                 .splide__arrow--prev {
-                    left: -70px;
+                    left: -100px;
                 }
 
                 .splide__arrow {
                     background: transparent;
                     z-index: 2;
+                    transition: all 0.3s;
 
                     svg {
                         width: 2.2em;
@@ -581,6 +583,7 @@
                 }
                 .splide__arrow:hover svg {
                     fill: #ff9900;
+                    transition: all 0.3s;
                 }
             }
 
@@ -590,6 +593,7 @@
                 .splide__pagination__page {
                     width: 6px;
                     height: 6px;
+                    margin: 0 10px;
                 }
 
                 .is-active {
@@ -599,6 +603,84 @@
                     margin-top: 6px;
                 }
             }
+        }
+    }
+}
+
+.contact-us {
+    display: flex;
+    width: 100%;
+    background-color: #ffb800;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+    .contact-us__form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @include containerFirstTitle;
+        @include containerSecondTitle;
+
+        .contact-us__form_first-title, .contact-us__form_second-title {
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .contact-us__form_row {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+
+            .cfr_sm-input {
+                display: flex;
+                width: 50%;
+                @include inputFormatting;
+            }
+            .cfr_sm-input::placeholder {
+                color: #ffffff;
+            }
+
+            .cfr_sm-input:first-child {
+                margin-right: 50px;
+            }
+            .cfr_sm-input:last-child {
+                margin-left: 50px;
+            }
+
+            .cfr_lg-input {
+                display: flex;
+                width: 100%;
+                @include inputFormatting;
+            }
+            .cfr_lg-input::placeholder {
+                color: #ffffff;
+            }
+        }
+
+        .contact-us__form_sbmt-btn {
+            display: flex;
+            padding: 10px 20px;
+            width: fit-content;
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            transition: all 0.3s;
+        }
+        .contact-us__form_sbmt-btn:hover {
+            background-color: #ffffff;
+            color: #ff9900;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .contact-us__form_sbmt-btn:focus, .cfr_sm-input:focus, .cfr_lg-input:focus {
+            outline: none;
         }
     }
 }
