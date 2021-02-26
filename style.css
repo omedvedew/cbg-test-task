@@ -601,6 +601,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 50px;
 }
 .contact-us .contact-us__form .container_first-title {
   font-family: "GilroyRegular";
@@ -681,6 +682,134 @@
   transition: all 0.3s;
 }
 .contact-us .contact-us__form .contact-us__form_sbmt-btn:focus, .contact-us .contact-us__form .cfr_sm-input:focus, .contact-us .contact-us__form .cfr_lg-input:focus {
+  outline: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+.footer .footer__contacts {
+  display: flex;
+  padding: 100px 150px;
+  border-bottom: 1px solid #ffffff;
+}
+.footer .footer__contacts .footer__contacts_info {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+.footer .footer__contacts .footer__contacts_info .fci_logo {
+  font-family: "GilroyBlack";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 80px;
+  color: #ff9900;
+  text-transform: uppercase;
+}
+.footer .footer__contacts .footer__contacts_info .fci_text {
+  font-family: "GilroyRegular";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer .footer__contacts .footer__contacts_menu {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  padding-left: 100px;
+  align-items: flex-start;
+}
+.footer .footer__contacts .footer__contacts_menu .fcm_item {
+  display: flex;
+  color: #ffffff;
+  font-family: "GilroyRegular";
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 20px;
+  margin: 10px;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+.footer .footer__contacts .footer__contacts_menu .fcm_item:hover {
+  color: #ff9900;
+  border-bottom: 1px solid #ff9900;
+  transition: all 0.3s;
+}
+.footer .footer__contacts .footer__contacts_address {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  align-items: flex-start;
+  padding-right: 100px;
+}
+.footer .footer__contacts .footer__contacts_address .fca_item {
+  color: #ffffff;
+  font-family: "GilroyRegular";
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 20px;
+  margin: 10px;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+.footer .footer__contacts .footer__contacts_address .fca_item span {
+  font-family: "GilroyBold";
+  font-weight: normal;
+}
+.footer .footer__contacts .footer__contacts_address .fca_item:hover {
+  color: #ff9900;
+  border-bottom: 1px solid #ff9900;
+  transition: all 0.3s;
+}
+.footer .footer__contacts .footer__contacts_social {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  width: 10%;
+}
+.footer .footer__contacts .footer__contacts_social .fcs_item {
+  display: flex;
+  background: transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all 0.3s;
+}
+.footer .footer__contacts .footer__contacts_social .fcs_instagram {
+  background-image: url(images/instagram.png);
+}
+.footer .footer__contacts .footer__contacts_social .fcs_linkedin {
+  background-image: url(images/linkedin.png);
+}
+.footer .footer__contacts .footer__contacts_social .fcs_facebook {
+  background-image: url(images/facebook.png);
+}
+.footer .footer__contacts .footer__contacts_social .fcs_item:hover {
+  background-color: #ff9900;
+  box-shadow: 0px 0px 6px 3px #ff9900;
+  transition: all 0.3s;
+  transform: scale(1.5);
+}
+.footer .footer__contacts .footer__contacts_social .fcs_item:focus {
   outline: none;
 }
 
