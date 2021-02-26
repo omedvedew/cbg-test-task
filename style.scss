@@ -30,6 +30,9 @@
     position: relative;
     top: 0;
     left: 0;
+    @media (max-width:767px) {
+        display: none;
+    }
 
     .header-contacts__contacts {
         display: flex;
@@ -91,11 +94,20 @@
     align-items: center;
     z-index: 20;
     font-family: "GilroyRegular";
+    @media (max-width:767px) {
+        justify-content: space-between;
+        padding-left: 20px;
+        z-index: 20;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
 
     .header__logo {
         display: flex;
         width: 20%;
         justify-content: center;
+        z-index: 20;
         
         .header__logo_item {
             font-family: "GilroyBlack";
@@ -109,6 +121,49 @@
             transition: all 0.3s;
             transform: scale(1.2);
         }
+
+        .burger {
+            display: none;
+            @media (max-width:767px) {
+                display: flex;
+                position: relative;
+                margin-left: 10px;
+
+                span {
+                    display: flex;
+                    background-color: #ffffff;
+                    width: 25px;
+                    height: 4px;
+                    border-radius: 2px;
+                    position: absolute;
+                    top: 14px;
+                    transition: all 0.3s ease-in-out;
+                }
+                span:first-child {
+                    top: 8px;
+                }
+                span:last-child {
+                    top: 20px;
+                }
+            }
+        }
+        .burger-active {
+            span {
+                transition: all 0.3s ease-in-out;
+                background-color: #ff9900;
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:first-child {
+                top: 14px;
+                transform: rotateZ(135deg);
+            }
+            span:last-child {
+                top: 14px;
+                transform: rotateZ(-135deg);
+            }
+        }
     }
 
     .header__nav {
@@ -116,6 +171,9 @@
         width: 55%;
         justify-content: space-evenly;
         z-index: 20;
+        @media (max-width: 767px) {
+            display: none;
+        }
 
         .header__nav_item {
             display: flex;
@@ -134,10 +192,56 @@
         }
     }
 
+    .header__mobile__nav {
+        display: none;
+        @media (max-width: 767px) {
+            display: flex;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            flex-direction: column;
+            max-width: 50%;
+            position: relative;
+            top: 100px;
+            left: -115%;
+            align-items: flex-start;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 20;
+
+            .header__nav_item {
+                display: flex;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 18px;
+                border-bottom: 2px solid transparent;
+                padding-top: 4px;
+                padding-bottom: 2px;
+                transition: all 0.3s;
+            }
+
+            .header__nav_item:hover {
+                color: #ff9900;
+                border-bottom: 2px solid #ff9900;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .header__mobile__nav-active {
+        @media (max-width: 767px) {
+            visibility: visible;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(200%);
+        }
+    }
+
     .header__callback {
         display: flex;
         width: 25%;
         justify-content: center;
+        @media (max-width: 767px) {
+            z-index: 20;
+            transform: scale(0.5);
+        }
 
         .header__callback_btn {
             border: 2px solid #ffffff;

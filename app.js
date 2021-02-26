@@ -19,4 +19,15 @@ circle.forEach((el, i) => {
 });
 
 
+// Mobile-menu script
+
+let burger = document.querySelector(".burger");
+let mobileNav = document.querySelector(".header__mobile__nav");
+
+burger.addEventListener("click", function() {
+    mobileNav.classList.toggle("header__mobile__nav-active");
+    burger.classList.toggle("burger-active");
+});
+
+
 
