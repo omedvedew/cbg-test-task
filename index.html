@@ -27,7 +27,7 @@
 
     <header class="header">
         <div class="header__logo">
-            <a href="" class="header__logo_item">LOGO</a>
+            <a href="#home-anch" class="header__logo_item">LOGO</a>
             <div class="burger">
                 <span></span>
                 <span></span>
@@ -35,18 +35,18 @@
             </div>
         </div>
         <nav class="header__nav">
-            <a href="" class="header__nav_item">Про нас</a>
-            <a href="" class="header__nav_item">Відгуки</a>
-            <a href="" class="header__nav_item">Ціни</a>
-            <a href="" class="header__nav_item">Наші роботи</a>
-            <a href="" class="header__nav_item">Контакти</a>
+            <a href="#about-anch" class="header__nav_item">Про нас</a>
+            <a href="#testimonials-anch" class="header__nav_item">Відгуки</a>
+            <a href="#price-anch" class="header__nav_item">Ціни</a>
+            <a href="#portfolio-anch" class="header__nav_item">Наші роботи</a>
+            <a href="#contacts-anch" class="header__nav_item">Контакти</a>
         </nav>
         <nav class="header__mobile__nav">
-            <a href="" class="header__nav_item">Про нас</a>
-            <a href="" class="header__nav_item">Відгуки</a>
-            <a href="" class="header__nav_item">Ціни</a>
-            <a href="" class="header__nav_item">Наші роботи</a>
-            <a href="" class="header__nav_item">Контакти</a>
+            <a href="#about-anch" class="header__nav_item">Про нас</a>
+            <a href="#testimonials-anch" class="header__nav_item">Відгуки</a>
+            <a href="#price-anch" class="header__nav_item">Ціни</a>
+            <a href="#portfolio-anch" class="header__nav_item">Наші роботи</a>
+            <a href="#contacts-anch" class="header__nav_item">Контакти</a>
         </nav>
         <div class="header__callback">
             <button class="header__callback_btn">Замовити дзвінок</button>
@@ -57,7 +57,7 @@
     <main class="main">
 
         <!-- cover-container -->
-        <div class="cover">
+        <div class="cover" id="home-anch">
             <div class="cover__description">
                 <h2 class="cover__description_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                 <p class="cover__description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam.</p>
@@ -90,7 +90,7 @@
         </div>
 
         <!-- about-us-container -->
-        <div class="about-us">
+        <div class="about-us" id="about-anch">
             <div class="about-us__img">
                 <div class="about-us__img_experience">
                     <span class="aie-digit">10+</span>
@@ -106,7 +106,7 @@
         </div>
 
         <!-- work-stages -->
-        <div class="work-stages">
+        <div class="work-stages" id="price-anch">
             <h3 class="work-stages__first-title container_first-title">ЕТАПИ РОБОТИ</h3>
             <h2 class="work-stages__second-title container_second-title">Як ми працюємо?</h2>
             <div class="work-stages__progressbar-container">
@@ -194,7 +194,7 @@
         </div>
 
         <!-- Portfolio -->
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio-anch">
             <div class="portfolio__titles">
                 <h3 class="portfolio__titles_first-title container_first-title">ПОРТФОЛІО</h3>
                 <h2 class="portfolio__titles_second-title container_second-title">Наші роботи</h2>
@@ -211,7 +211,7 @@
         </div>
 
         <!-- Testimonials -->
-        <div class="testimonials">
+        <div class="testimonials" id="testimonials-anch">
             <div class="testimonials__slider">
                 <h3 class="testimonials__slider_first-title container_first-title">ВІДГУКИ</h3>
                 <h2 class="testimonials__slider_second-title container_second-title">Що про нас говорять наші клієнти</h2>
@@ -259,7 +259,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__contacts">
+        <div class="footer__contacts" id="contacts-anch">
             <div class="footer__contacts_info">
                 <div class="fci_logo">logo</div>
                 <p class="fci_text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -285,6 +285,7 @@
         document.addEventListener( 'DOMContentLoaded', function () {
             new Splide( '.splide' , {
                 type: 'loop',
+                autoWidth: false,
             }).mount();
         } );
     </script>
