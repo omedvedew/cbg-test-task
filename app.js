@@ -30,4 +30,52 @@ burger.addEventListener("click", function() {
 });
 
 
+// portfolio-script
+let sources = ["images/IMG-1.png", "images/IMG-2.png", "images/IMG-3.png", "images/IMG-4.png"];
+let imagesContainer = document.querySelector(".pws__images-container");
+let images = document.querySelectorAll(".pws__i_item");
+let paginationContainer = document.querySelector(".pws__silder-container_pagination");
+let paginationDots = document.querySelectorAll(".pws__sp_item");
+let bigImage = document.querySelector(".pws__sc_big-image");
+
+imagesContainer.addEventListener("click", function (e) {
+    let target = e.target;
+
+    if (target.classList.contains("pws__i_item")) {
+        paginationDots.forEach((dot) => {
+            dot.setAttribute("style", "border: 3px solid #ffb800");
+        });
+
+        images.forEach((img, i) => {
+            img.classList.remove("active");
+            if (target === img) {
+                bigImage.setAttribute("src", `${img.getAttribute("src")}`);
+                paginationDots[i].setAttribute("style", "border: 3px solid #ffffff");
+                img.classList.add("active");
+            };
+        });
+    };
+});
+
+paginationContainer.addEventListener("click", function(e) {
+    let target = e.target;
+
+    if (target.classList.contains("pws__sp_item")) {
+        images.forEach((img) => {
+            img.classList.remove("active");
+        });
+
+        paginationDots.forEach((dot, i) => {
+            dot.setAttribute("style", "border: 3px solid #ffb800");
+            if (target === dot) {
+                bigImage.setAttribute("src", `${images[i].getAttribute("src")}`);
+                images[i].classList.add("active");
+                dot.setAttribute("style", "border: 3px solid #ffffff");
+            };
+
+        });
+
+    }
+})
+
 
