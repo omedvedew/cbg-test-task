@@ -43,14 +43,14 @@ imagesContainer.addEventListener("click", function (e) {
 
     if (target.classList.contains("pws__i_item")) {
         paginationDots.forEach((dot) => {
-            dot.setAttribute("style", "border: 3px solid #ffb800");
+            dot.setAttribute("style", "border: 5px solid #ffb800");
         });
 
         images.forEach((img, i) => {
             img.classList.remove("active");
             if (target === img) {
                 bigImage.setAttribute("src", `${img.getAttribute("src")}`);
-                paginationDots[i].setAttribute("style", "border: 3px solid #ffffff");
+                paginationDots[i].setAttribute("style", "border: 5px solid #ffffff");
                 img.classList.add("active");
             };
         });
@@ -66,11 +66,11 @@ paginationContainer.addEventListener("click", function(e) {
         });
 
         paginationDots.forEach((dot, i) => {
-            dot.setAttribute("style", "border: 3px solid #ffb800");
+            dot.setAttribute("style", "border: 5px solid #ffb800");
             if (target === dot) {
                 bigImage.setAttribute("src", `${images[i].getAttribute("src")}`);
                 images[i].classList.add("active");
-                dot.setAttribute("style", "border: 3px solid #ffffff");
+                dot.setAttribute("style", "border: 5px solid #ffffff");
             };
 
         });
