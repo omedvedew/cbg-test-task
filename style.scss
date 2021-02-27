@@ -709,14 +709,14 @@
                 @media (max-width: 767px) {
                     flex-direction: row;
                     width: 100%;
-
                 }
                 
                 img {
                     width: 100%;
                     margin-bottom: 5px;
                     @media (max-width: 767px) {
-                        width: 33.3%;
+                        width: calc(33.3% - 4px);
+                        margin: 5px 2px;
                     }
                 }
                 img:last-child {

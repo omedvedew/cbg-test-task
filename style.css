@@ -769,7 +769,8 @@
 }
 @media (max-width: 767px) {
   .portfolio .portfolio__works .portfolio__works__slider .pws__images-container img {
-    width: 33.3%;
+    width: calc(33.3% - 4px);
+    margin: 5px 2px;
   }
 }
 .portfolio .portfolio__works .portfolio__works__slider .pws__images-container img:last-child {
